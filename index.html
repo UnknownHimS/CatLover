@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1 id="time">time</h1>
+<h1 id="day">day</h1>
+<h1 id="hello">Hello World</h1>
+<button id="play">playnow</button>
+<div id="phone"><img src="cat.png" height="200" id="image" width="200"/></div>
+<div id="keypad"></div>
+<div id="adjacent"></div>
+<img src="talkcat1.png" id="talkcat1">
+<button id="talk1" onclick="talks('a')">Hello</button>
+<button id="talk2" onclick="talks('b')">stay away</button>
+<div id="slay">
+    <button id="btn1"></button>
+    <button id="btn2"></button>
+    <button id="btn3"></button>
+    <button id="btn4"></button>
+    <button id="btn5"></button>
+    <button id="btn6"></button>
+    <button id="btn7"></button>
+    <button id="btn8"></button>
+    <button id="btn9"></button>
+
+
+    <div id="sontainerx">
+        <div id="calculator">
+            <div>
+                <form>
+                    <div>
+                        <input name="display" type="text" id="fordisplay">
+                    </div>
+                    <div id="inputs">
+                        <input for="display" type="button" value="1" onclick="display.value +='1'">
+                        <input for="display" type="button" value="2" onclick="display.value +='2'">
+                        <input for="display" type="button" value="3" onclick="display.value +='3'">
+                        <input for="display" type="button" value="4" onclick="display.value +='4'">
+                        <input for="display" type="button" value="5" onclick="display.value +='5'">
+                        <input for="display" type="button" value="6" onclick="display.value +='6'">
+                        <input for="display" type="button" value="7" onclick="display.value +='7'">
+                        <input for="display" type="button" value="8" onclick="display.value +='8'">
+                        <input for="display" type="button" value="9" onclick="display.value +='9'">
+                        <input for="display" type="button" value="0" onclick="display.value +='0'">
+                        <input for="display" type="button" value="00" onclick="display.value +='00'">
+                        <input for="display" type="button" value="DEl" onclick="display.value =display.value.slice(0, -1)">
+                        <input for="display" type="button" value="+" onclick="display.value +='+'">
+                        <input for="display" type="button" value="-" onclick="display.value +='-'">
+                        <input for="display" type="button" value="/" onclick="display.value +='/'">
+                        <input for="display" type="button" value="=" onclick="display.value =`${eval(display.value)} missu btw`">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js" ></script>
+</body>
+</html>
