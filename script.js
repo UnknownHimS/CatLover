@@ -365,7 +365,7 @@ function talks(answer){
         talk1.setAttribute("onclick", "talks('d')");
     }
     else if(answer === 'd'){
-talkcat1.src = 'talkcat2.png';
+   
 let max = 5;
 let min = 2;
 
@@ -388,9 +388,11 @@ while(running){
     attempt++;
     if(guess > answer){
       window.alert('too high');
+      talkcat1.src = 'talkcat2.png';
     }
     else if(guess < answer){
       window.alert('too low');
+      talkcat1.src = 'talkcat2.png';
     }
     else{
       running = false;
