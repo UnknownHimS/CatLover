@@ -2,7 +2,6 @@ const time = document.getElementById('time');
 
 const date = new Date();
 
-
 let hours = date.getHours();
 
 let minute = date.getMinutes();
@@ -424,14 +423,9 @@ while(running){
       talk2.removeAttribute('onclick');
       
       talk2.onclick=function(){
-      const searchvalue = search.value;
-      window.location.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(searchvalue)}`;
-      talk1.textContent='its youtube i am not an movie theater bruh';
+       const searchvalue = search.value;
+       window.location.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(searchvalue)}`;
+       talk1.textContent='its youtube i am not an movie theater bruh';
       }
-    }
-    
-}
-
-
-
-
+    }  
+  }
