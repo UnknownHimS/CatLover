@@ -367,7 +367,7 @@ function talks(answer){
     }
     else if(answer === 'd'){
         talk1.setAttribute("onclick", "talks('e')");
-        let max = 5;
+let max = 5;
 let min = 2;
 
 let attempt = 0;
