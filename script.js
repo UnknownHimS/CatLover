@@ -404,6 +404,35 @@ while(running){
 }
 
     }
+
+    }
+    else if(answer == 'e'){
+      talk1.textContent="lts'watch";
+      talk1.setAttribute("onclick", "talks('f')");
+      
+    }
+    else if(answer == 'f'){
+      
+      
+      talk2.style.top='140px';
+
+      const search = document.createElement('input');
+      search.setAttribute('id', 'talk1');
+     
+      search.style.top='190px';
+
+      talk1.parentNode.replaceChild(search, talk1);
+
+      
+      talk2.textContent='submit here';
+      talk2.removeAttribute('onclick');
+      let searchvalue;
+      searchvalue =  talk1.value;
+      talk2.onclick=function(){
+      window.location.href=`https://www.youtube.com/search?q=${encodeURIComponent(searchvalue)}`;
+      talk1.textContent='its youtube i am not an movie theater bruh';
+      }
+    }
 }
 
 
