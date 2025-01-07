@@ -422,12 +422,12 @@ while(running){
       
       talk2.textContent='submit here';
       talk2.removeAttribute('onclick');
-      let searchvalue;
-      searchvalue =  talk1.value;
-      talk2.onclick=function(){
-      window.location.href=`https://www.youtube.com/search?q=${encodeURIComponent(searchvalue)}`;
+     talk2.onclick=function(){
+      const searchvalue = search.value;
+      window.location.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(searchvalue)}`;
       talk1.textContent='its youtube i am not an movie theater bruh';
       }
+    }
     }
     
 }
