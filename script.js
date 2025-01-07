@@ -72,9 +72,10 @@ btn1.onclick=function(){
     }
     else if( currentsymbol === 2){
       if(btn1.textContent===''){
+        if(btn1.textContent===''){
             btn1.textContent = 'O';
             checkWin();
-        
+            }
         currentsymbol = 1;
         if( currentplayer === 1){
             currentplayer = 2;
@@ -365,8 +366,8 @@ function talks(answer){
         talk1.setAttribute("onclick", "talks('d')");
     }
     else if(answer === 'd'){
-   
-let max = 5;
+        talk1.setAttribute("onclick", "talks('e')");
+        let max = 5;
 let min = 2;
 
 let attempt = 0;
@@ -388,22 +389,17 @@ while(running){
     attempt++;
     if(guess > answer){
       window.alert('too high');
-      talkcat1.src = 'talkcat2.png';
     }
     else if(guess < answer){
       window.alert('too low');
-      talkcat1.src = 'talkcat2.png';
     }
     else{
       running = false;
       alert(`congratulations the answer is ${answer} and your attempt is ${attempt}`);
       talk1.textContent='Thanks !'; 
-      talkcat1.src = 'talkcat4.png';
     }
   }
 }
-
-    }
 
     }
     else if(answer == 'e'){
@@ -433,6 +429,9 @@ while(running){
       talk1.textContent='its youtube i am not an movie theater bruh';
       }
     }
+    
 }
+
+
 
 
